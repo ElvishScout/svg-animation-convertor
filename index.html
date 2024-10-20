@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SVG Animation Convertor</title>
+    <title>SVG Animation Converter</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>SVG Animation Convertor</h1>
+        <h1>SVG Animation Converter</h1>
       </header>
       <main>
         <form id="form" class="form" autocomplete="off">
@@ -60,18 +60,16 @@
           <div class="form-row">
             <div class="form-item">
               <label>
-                <input id="input-file" class="form-file" type="file" accept=".svg" />
                 <span class="form-file-span">Upload file</span>
+                <input id="input-file" class="form-file" type="file" accept=".svg" />
               </label>
-              <span>or put source code here</span>
+              <label for="field-source"><span>or put source code here</span></label>
             </div>
           </div>
           <div class="form-row">
             <div class="source-and-preview">
               <div class="split-pane">
-                <label>
-                  <textarea id="field-source" class="source" name="source"></textarea>
-                </label>
+                <textarea id="field-source" class="source" name="source"></textarea>
               </div>
               <div class="split-pane">
                 <img id="image-preview" class="preview" alt="preview" />

@@ -33,9 +33,6 @@
   cursor: pointer;
 }
 
-.source-and-preview {
-  width: 100%;
-}
 .split-pane {
   display: inline-block;
   width: 100%;
@@ -49,6 +46,7 @@
   min-height: 4rem;
   resize: vertical;
   text-wrap: nowrap;
+  box-sizing: border-box;
 }
 .preview {
   width: 100%;
