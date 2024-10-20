@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Animation Convertor</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>SVG Animation Convertor</h1>
+      </header>
+      <main>
+        <form id="form" class="form" autocomplete="off">
+          <div class="form-row">
+            <div class="form-item">
+              <label>
+                <span>Width:</span>
+                <input id="field-width" class="form-text" type="text" name="width" />
+                <span>px</span>
+              </label>
+            </div>
+            <div class="form-item">
+              <label>
+                <span>Height:</span>
+                <input id="field-height" class="form-text" type="text" name="height" />
+                <span>px</span>
+              </label>
+            </div>
+            <div class="form-item">
+              <label>
+                <input id="field-original" class="form-check" type="checkbox" name="original" />
+                <span>Use original size</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item">
+              <label>
+                <span>Duration:</span>
+                <input class="form-text" type="text" name="duration" />
+                <span>ms</span>
+              </label>
+            </div>
+            <div class="form-item">
+              <label>
+                <span>Begin:</span>
+                <input class="form-text" type="text" name="begin" />
+                <span>ms</span>
+              </label>
+            </div>
+            <div class="form-item">
+              <label>
+                <span>Interval:</span>
+                <input class="form-text" type="text" name="interval" />
+                <span>ms</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item">
+              <label>
+                <input id="input-file" class="form-file" type="file" accept=".svg" />
+                <span class="form-file-span">Upload file</span>
+              </label>
+              <span>or put source code here</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="source-and-preview">
+              <div class="split-pane">
+                <label>
+                  <textarea id="field-source" class="source" name="source"></textarea>
+                </label>
+              </div>
+              <div class="split-pane">
+                <img id="image-preview" class="preview" alt="preview" />
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit">Proceed</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
